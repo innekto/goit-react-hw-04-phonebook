@@ -39,6 +39,14 @@ export const Field = styled(FormikField)`
 `;
 export const FormButton = styled.button`
   cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 3px;
   width: 35%;
   margin: auto;
+  border: none;
+  background-color: white;
+  :hover {
+    background-color: #1d5a95;
+    color: white;
+  }
 `;

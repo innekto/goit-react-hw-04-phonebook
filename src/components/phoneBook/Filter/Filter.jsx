@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { FilterLabel, FilterInput, FilterTitle } from './Filter.styled';
 
-const Filter = ({ onHandleChange, filter = '' }) => {
+const Filter = ({ onHandleChange, filter }) => {
   return (
     <FilterLabel>
       <FilterTitle>Find contacts by name</FilterTitle>

@@ -7,15 +7,11 @@ import { ContactsList, ContactsItem, DeleteButton } from './ContactList.styled';
 const ContactList = ({ contacts, deleteContacts }) => {
   return (
     <>
-      {/* вертаємо динамічну розмітку списку */}
       <ContactsList>
         {contacts.map(({ id, name, number }) => {
           return (
             <ContactsItem key={id}>
-              <div>
-                <Contact name={name} number={number} />
-              </div>
-              {/*при кліку на кнопку рендереться розмітка без компоненту на кнопку якого натиснули */}
+              <Contact name={name} number={number} />
               <DeleteButton type="button" onClick={() => deleteContacts(id)}>
                 Delete
               </DeleteButton>
